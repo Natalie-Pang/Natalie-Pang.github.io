@@ -1,0 +1,230 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+   /* background-color: hsl(148, 100%, 87%); */
+   background-image: url("/static/images/background4.png");
+   background-size: cover;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #24252A;
+    margin: 0 auto;
+}
+
+@keyframes logoAnimation {
+    0% {
+        transform: translateY(0);
+    }
+    33% {
+        transform: translateY(-3px);
+    }
+    66% {
+        transform: translateY(3px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.logo{
+    cursor: pointer;
+    font-weight: 700;
+    font-size: clamp(20px, 2.5vw, 28px);
+    color: #87dfff;
+    text-decoration: none;
+}
+
+.logo:hover {
+    animation: logoAnimation 2s infinite;
+}
+
+.nav-links {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.nav-links li {
+    list-style: none;
+    padding: 0 8px;
+    margin: 0 auto;
+}
+
+.nav-links a{
+    list-style-type: none;
+    display: block;
+    font-weight: 500;
+    font-size: clamp(14px, 2.5vw, 22px);
+    color: #fff;
+    text-decoration: none;
+    margin: 0;
+    transition: color 0.5s, text-shadow 0.5s;
+}
+
+.navbar-item:hover {
+    color: #ff1d70;
+    text-shadow: 0 0 10px #ff1d70;
+    text-decoration: underline;
+}
+
+button{
+    padding: 9px 25px;
+    background-color: rgba(0,136,169,1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+button:hover{
+    background-color: rgba(0,136,169,0.8);
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    right: 10px;
+    background: #24252A;
+}
+
+.nav-links li:hover .dropdown {
+    display: block;
+}
+
+.dropdown ul {
+    display: block;
+    margin: 10px;
+}
+
+.dropdown ul li {
+    width: 90px;
+    padding: 10px;
+}
+
+#content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.portfolio {
+    width: min(90%, 1800x);
+    margin-inline: auto;
+}
+
+.portfolio-1 {
+    display: block;
+    background: #24252abb;
+    margin: 2% 2%;
+    border-radius: 18px;
+    padding: 2% 2%;
+    align-items: center;
+    display: flex;
+    margin-bottom: 0;
+}
+
+.portfolio-1-text {
+    color: #ffffff;
+    padding: 40px 40px;
+    flex-direction: row;
+    width: 50%;
+}
+
+.portfolio-1-text h1{
+    font-weight: 600;
+    font-size: clamp(30px, 2.5vw, 50px);
+}
+
+.portfolio-1-text span {
+    color: #d2cf2c;
+}
+
+.portfolio-1-text p{
+    font-weight: 400;
+    font-size: clamp(15px, 2.5vw, 22px);
+    line-height: 1.5;
+}
+
+.portfolio-icon img{
+    width: clamp(120px, 2.5vw, 200px);
+    float: right;
+    margin-right: 0;
+}
+
+.portfolio-2 {
+    margin: 2% 5%;
+    text-align: center;
+}
+
+.portfolio-2 h1 {
+    color: #1b688e;
+    font-weight: 600;
+    font-size: 50px;
+}
+
+.portfolio-2 .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 10px;
+}
+
+.portfolio-2 .box-container .box {
+    width: min(90%, 1000px);
+    background: #24252aca;
+    border-radius: 15px;
+    box-shadow: #cccccc;
+    border: #0088a9;
+    padding: max(1vh, 1rem) 1rem;
+    color: #ffffff;
+    font-size: 18px;
+}
+
+.portfolio-2 .box-container .box h3 {
+    font-size: clamp(3rem, 10vw +1rem, 5rem);
+}
+
+.portfolio-2 .box-container .box ul {
+    padding: 10px 0;
+    text-align: left;
+    list-style: none;
+}
+
+.portfolio-2 .box-container .box ul li:nth-child(even) {
+    color: #fff12b;
+}
+
+.portfolio-2 .box-container .box img {
+    width: 50px;
+    padding: 0 7px;
+}
+
+.portfolio-3 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: #ffffffb9;
+    margin: 2% 5%;
+    border-radius: 18px;
+    padding: 10px 20px;
+}
+
+.portfolio-3 h1 {
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.portfolio-3 p {
+    font-size: clamp(14px, 2.5vw, 20px);
+    color: #120754;
+    line-height: 2;
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nattomato</title>
+    <link rel="icon" href="/static/images/icon.png">
+    <link rel="stylesheet" href="/static/css/quiz.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <a href="/templates/main/home.html" class="logo">Nattomato</a>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="/templates/main/home.html" class="navbar-item">Portfolio</a><li>
+                <li><a href="/templates/main/about.html" class="navbar-item">About</a></li>                
+                <li>
+                    <a href="#" class="navbar-item">Services▾</a>
+                    <div class="dropdown">
+                        <ul>
+                            <li><a href="/templates/main/recipe.html" class="navbar-item">Recipe</a></li>
+                            <li><a href="/templates/main/cardgame.html" class="navbar-item">Game</a></li>
+                            <li><a href="/templates/main/quiz.html" class="navbar-item">Quiz</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="quiz">
+        <div class="quiz-header">
+            <h1>Let's see how much you know about me :3</h1>
+            <p class="rule">Answer the following questions by filling in the box. To check answers, press the answer button</p>
+        </div>
+        <div class="question-container">
+            <div class="question">
+                <p>1. Which of the following is my favourite anime?</p>
+                <label><input type="radio" name="option1">Spy x Family</label>
+                <label><input type="radio" name="option1">My Hero Academy</label>
+                <label><input type="radio" name="option1">One Piece</label>
+                <label><input type="radio" name="option1">Overfishing</label>
+                <a href="#answer" class="quiz-submit">Answer</a>
+                <div class="answer"><p>Overfishing</p></div>
+            </div>
+            <div class="question">
+                <p>2. What is my favourite food?</p>
+                <label><input type="radio" name="option2">Egg</label>
+                <label><input type="radio" name="option2">Ham</label>
+                <label><input type="radio" name="option2">Chicken</label>
+                <label><input type="radio" name="option2">Beef</label>
+                <a href="#answer" class="quiz-submit">Answer</a>
+                <div class="answer"><p>Egg</p></div>
+            </div>
+            <div class="question">
+                <p>3. What I scared the most?</p>
+                <label><input type="radio" name="option3">Bugs</label>
+                <label><input type="radio" name="option3">Height</label>
+                <label><input type="radio" name="option3">Human</label>
+                <label><input type="radio" name="option3">All of the above</label>
+                <a href="#answer" class="quiz-submit">Answer</a>
+                <div class="answer"><p>All of the above</p></div>
+            </div>
+            <div class="question">
+                <p>4. Which language I hate the most?</p>
+                <label><input type="radio" name="option4">Cantonese</label>
+                <label><input type="radio" name="option4">Japanese</label>
+                <label><input type="radio" name="option4">Mandarin</label>
+                <label><input type="radio" name="option4">Korean</label>
+                <a href="#answer" class="quiz-submit">Answer</a>
+                <div class="answer"><p>Mandarin</p></div>
+            </div>
+            <div class="question">
+                <p>5. Which of the following is important?</p>
+                <label><input type="radio" name="option5">Time</label>
+                <label><input type="radio" name="option5">Life quality</label>
+                <label><input type="radio" name="option5">Sleep</label>
+                <label><input type="radio" name="option5">Nothing</label>
+                <a href="#answer" class="quiz-submit">Answer</a>
+                <div class="answer"><p>Sleep</p></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

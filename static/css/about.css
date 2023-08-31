@@ -1,0 +1,180 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+   background-color: #ffffff;
+   /* background-image: url("/static/images/background4.png"); */
+   background-size: cover;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #24252A;
+    margin: 0 auto;
+}
+
+@keyframes logoAnimation {
+    0% {
+        transform: translateY(0);
+    }
+    33% {
+        transform: translateY(-3px);
+    }
+    66% {
+        transform: translateY(3px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.logo{
+    cursor: pointer;
+    font-weight: 700;
+    font-size: clamp(20px, 2.5vw, 28px);
+    color: #87dfff;
+    text-decoration: none;
+}
+
+.logo:hover {
+    animation: logoAnimation 2s infinite;
+}
+
+.nav-links {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.nav-links li {
+    list-style: none;
+    padding: 0 8px;
+    margin: 0 auto;
+}
+
+.nav-links a{
+    list-style-type: none;
+    display: block;
+    font-weight: 500;
+    font-size: clamp(14px, 2.5vw, 22px);
+    color: #fff;
+    text-decoration: none;
+    margin: 0;
+    transition: color 0.5s, text-shadow 0.5s;
+}
+
+.navbar-item:hover {
+    color: #ff1d70;
+    text-shadow: 0 0 10px #ff1d70;
+    text-decoration: underline;
+}
+
+button{
+    padding: 9px 25px;
+    background-color: rgba(0,136,169,1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+button:hover{
+    background-color: rgba(0,136,169,0.8);
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    right: 10px;
+    background: #24252A;
+}
+
+.nav-links li:hover .dropdown {
+    display: block;
+}
+
+.dropdown ul {
+    display: block;
+    margin: 10px;
+}
+
+.dropdown ul li {
+    width: 90px;
+    padding: 10px;
+}
+
+#content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.about-page-header {
+    margin: 2% 6%;
+    justify-content: center;
+    min-height: 100px;
+    border-bottom: #525252 2px solid;
+}
+
+.about-page-header h1 {
+    color: rgb(69, 154, 251);
+    font-weight: 600;
+    font-size: clamp(22px, 2.5vw, 32px);
+    margin-bottom: 2%;
+    border-bottom: rgba(163, 163, 163, 0.308) 2px solid;
+}
+
+.about-page-header p {
+    font-size: clamp(12px, 2.5vw, 20px);
+    margin-bottom: 2%;
+}
+
+.about-page-body {
+    background: #87dfff8e;
+    margin: 0.5% 6%;
+    padding: 0.5% 0.5%;
+    justify-content: center;
+    min-height: 100px;
+    border-radius: 1.5%;
+    border-bottom: #525252 2px solid;
+}
+
+.about-page-body h1 {
+    font-weight: 600;
+    font-size: clamp(22px, 2.5vw, 32px);
+    margin-bottom: 1%;
+}
+
+.about-page-body-image {
+    text-align: center;
+}
+
+.about-page-body img {
+    width: 100%;
+    max-width: 800px;
+    object-fit: cover;
+    margin-bottom: 2%;
+}
+
+.about-page-body p {
+    font-size: clamp(10px, 2.5vw, 18px);
+    margin-bottom: 2%;
+}
+
+.about-button {
+    background: #ffffff;
+    text-decoration: none;
+}
+
+.about-button a {
+    text-decoration: none;
+    color: #24252A;
+}

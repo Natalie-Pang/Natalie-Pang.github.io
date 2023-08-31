@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nattomato</title>
+    <link rel="icon" href="/static/images/icon.png">
+    <link rel="stylesheet" href="/static/css/cardgame.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <a href="/templates/main/home.html" class="logo">Nattomato</a>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="/templates/main/home.html" class="navbar-item">Portfolio</a><li>
+                <li><a href="/templates/main/about.html" class="navbar-item">About</a></li>                  
+                <li>
+                    <a href="#" class="navbar-item">Services▾</a>
+                    <div class="dropdown">
+                        <ul>
+                            <li><a href="/templates/main/recipe.html" class="navbar-item">Recipe</a></li>
+                            <li><a href="/templates/main/cardgame.html" class="navbar-item">Game</a></li>
+                            <li><a href="/templates/main/quiz.html" class="navbar-item">Quiz</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="card-game">
+        <div class="card-game-heading">
+            <h1>Check Your Luck for today</h1>
+            <p>By clicking the card, it will be flipped.</p>
+            <p>You can only pick one card per day.</p>
+        </div>
+        <div class="card-container">
+            <div class="card" onclick="flipCard(1)">
+                <div class="card-inner">
+                  <div class="card-front">
+                    <h2>Card 1</h2>
+                  </div>
+                  <div class="card-back">
+                    <div class="card-text" style="transform: rotateY(180deg);"></div>
+                  </div>
+                </div>
+            </div>
+              
+            <div class="card" onclick="flipCard(2)">
+                <div class="card-inner">
+                  <div class="card-front">
+                    <h2>Card 2</h2>
+                  </div>
+                  <div class="card-back">
+                    <div class="card-text" style="transform: rotateY(180deg);"></div>
+                  </div>
+                </div>
+            </div>
+              
+            <div class="card" onclick="flipCard(3)">
+                <div class="card-inner">
+                  <div class="card-front">
+                    <h2>Card 3</h2>
+                  </div>
+                  <div class="card-back">
+                    <div class="card-text" style="transform: rotateY(180deg);"></div>
+                  </div>
+                </div>
+            </div>  
+        </div>
+        <script src="/static/script.js"></script>
+    </div>
+</body>
+</html>
