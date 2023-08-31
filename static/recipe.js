@@ -95,7 +95,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 !selectedAllergies.some((allergy) =>
                     recipe.allergies.includes(allergy)
                 ) &&
-                selectedHealthIssues.every((healthIssue) =>
+                !selectedHealthIssues.some((healthIssue) =>
                     recipe.health_issue.includes(healthIssue)
                 )
             );
