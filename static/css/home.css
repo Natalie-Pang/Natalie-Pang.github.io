@@ -155,10 +155,12 @@ button:hover{
     line-height: 1.5;
 }
 
+.portfolio-icon {
+    margin: auto;
+}
+
 .portfolio-icon img{
     width: clamp(120px, 2.5vw, 200px);
-    float: right;
-    margin-right: 0;
 }
 
 .portfolio-2 {
